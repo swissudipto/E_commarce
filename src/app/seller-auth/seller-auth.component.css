@@ -1,0 +1,26 @@
+.sellersignup{
+    text-align: center;
+    color: blueviolet;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.sellersignupform{
+    text-align: center;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: auto;
+
+}
+.seller-signupinput{
+    margin-top: 25px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+.seller-signupbutton{
+    margin-top: 25px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height:45px;
+    
+}
