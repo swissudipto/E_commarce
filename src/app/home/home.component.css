@@ -1,0 +1,11 @@
+.mygrid
+{
+    color: blue;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+}
+.card{
+    height: 300px;
+    border: 2px double gray;
+}

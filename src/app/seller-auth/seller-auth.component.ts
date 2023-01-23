@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiconnectService } from '../services/apiconnect.service';
 
 @Component({
   selector: 'app-seller-auth',
@@ -7,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerAuthComponent implements OnInit {
 
-  constructor() { }
+  response:string='';
+
+  constructor(private apiconnect:ApiconnectService) { }
 
   ngOnInit(): void {
   }
   signup(data:object):void{
-    console.warn(data);
-
+    this.apiconnect.signup(data).subscribe(data=>{
+      this.response=data;
+    });
   }
 
 }
